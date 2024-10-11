@@ -1,0 +1,4 @@
+# linguagem python
+
+txt = str(input("Digite uma palavra: "))[::-1]
+print(txt)
