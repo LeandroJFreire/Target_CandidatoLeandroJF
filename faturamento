@@ -1,0 +1,21 @@
+# linguagem python
+
+aux = 0
+n_dias = 0
+
+faturamento = [1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500]
+
+maior = max(faturamento)
+print("O maior faturamento eh de: ", maior)
+
+minimo = min(faturamento)
+print("O menor faturamento eh de: ", minimo)
+
+media = sum(faturamento)/len(faturamento)
+print("A média de faturamento eh de: ", media)
+while aux < len(faturamento):
+    if faturamento[aux] > media:
+        #print (faturamento[aux])
+        n_dias+=1
+    aux+=1
+print("Numero de dias maior que a media eh de: ", n_dias)
