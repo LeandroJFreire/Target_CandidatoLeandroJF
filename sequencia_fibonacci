@@ -1,0 +1,23 @@
+#linguagem python
+
+seq_1 = 0
+seq_2 = 1
+verificacao = 0
+
+n = int( input("Informe um numero: "))
+
+seq_prox = seq_1+seq_2
+
+while seq_prox <= n:
+    if seq_prox == n:
+        print ("pertence a sequencia de fibonacci")
+        seq_prox = seq_prox+1
+        verificacao = 1
+    else:
+        seq_prox = seq_1+seq_2
+        #print (seq_prox)
+        seq_1 = seq_2
+        seq_2 = seq_prox
+
+if seq_prox > n and verificacao != 1:
+    print ("não pertence a sequencia de fibonacci")
